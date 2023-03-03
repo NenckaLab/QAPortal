@@ -1,0 +1,89 @@
+<TYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+</head>
+ <style>
+  .button {
+    padding: 15px 25px;
+    margin: auto;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: linen;
+    background-color: rgba(0,112,102,255);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+
+  .button:hover {background-color: #020452}
+
+  .button:active {
+    background-color: rgba(0,112,102,255);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  body {
+    background-color: #fffaeb;
+  }
+  h1 {
+    color: rgba(0,112,102,255);
+    text-align: center;
+  }
+  .center{
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgba(0,112,102,255);
+    font-size: 24px;
+  }
+  .centered{
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #fffaeb;
+    font-size: 24px;
+  }
+  .errorlist{
+    font-size: 8px;
+  }
+
+</style>
+
+
+<body>
+    <h1>{{heading}}</h1>
+    <div class="center">
+      <form action="{% url 'plot' %}" method="get">
+        {{form.as_p}}
+        <script>
+            $(function() {
+              $('input[name="daterange"]').daterangepicker({
+              opens: 'left'
+             }, function(start, end, label) {
+            console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+             });
+             });
+        </script>
+        <input type="submit" id="submit" class="centered button" value="Submit">
+      </form>
+     </div>
+</body>
+</html>
+

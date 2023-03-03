@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!-- This is a BXH (BIAC XML Header) file. -->
+<bxh xmlns:bxh="http://www.biac.duke.edu/bxh" xmlns="http://www.biac.duke.edu/bxh" version="1.0">
+  <datarec type="image">
+    <dimension type="x">
+      <units>mm</units>
+      <size>64</size>
+      <origin>105.4812469482</origin>
+      <gap>0</gap>
+      <spacing>3.4375</spacing>
+      <direction>-1 0 0</direction>
+    </dimension>
+    <dimension type="y">
+      <units>mm</units>
+      <size>64</size>
+      <origin>99.0812530518</origin>
+      <gap>0</gap>
+      <spacing>3.4375</spacing>
+      <direction>0 -1 0</direction>
+    </dimension>
+    <byteorder>lsbfirst</byteorder>
+    <elementtype>float32</elementtype>
+    <filename>fmri_input_sd.img</filename>
+    <fileoffset>0</fileoffset>
+    <filerecordsize>16384</filerecordsize>
+  </datarec>
+  <acquisitiondata>
+    <examnumber>4107</examnumber>
+    <studyid>Premier_48Ch_050422</studyid>
+    <seriesnumber>2</seriesnumber>
+    <runnumber>1</runnumber>
+    <institution>MCW CIR</institution>
+    <protocolname>QA MR Premier_48Ch</protocolname>
+    <psdname>epiRT</psdname>
+    <psdinternalname>EPI</psdinternalname>
+    <psddate>2020-08-26</psddate>
+    <psdtime>20:27:52</psdtime>
+    <scandate>2022-05-04</scandate>
+    <scantime>16:29:36</scantime>
+    <scannermanufacturer>GE MEDICAL SYSTEMS</scannermanufacturer>
+    <scanner>MCWMR02</scanner>
+    <examdescription>PremierQA</examdescription>
+    <description>FATES_EPI_RUN</description>
+    <operator>7</operator>
+    <scannermodelname>SIGNA Premier</scannermodelname>
+    <scanningsequence>EP/GR</scanningsequence>
+    <sequencevariant>SS</sequencevariant>
+    <scanoptions>SAT_GEMS/EPI_GEMS/FS</scanoptions>
+    <mracquisitiontype>2D</mracquisitiontype>
+    <angioflag>N</angioflag>
+    <numaverages>1</numaverages>
+    <imagingfrequency>127.772294</imagingfrequency>
+    <imagednucleus>1H</imagednucleus>
+    <spacingbetweenslices>5</spacingbetweenslices>
+    <echotrainlength>1</echotrainlength>
+    <percentsampling>100</percentsampling>
+    <percentphasefieldofview>100</percentphasefieldofview>
+    <scannerserialnumber>00000000FLORIO1X</scannerserialnumber>
+    <softwareversions>28</softwareversions>
+    <beatrejectionflag>Y</beatrejectionflag>
+    <heartrate>0</heartrate>
+    <cardiacnumberofimages>0</cardiacnumberofimages>
+    <triggerwindow>0</triggerwindow>
+    <reconstructiondiameter>220</reconstructiondiameter>
+    <receivecoilname>48HAP</receivecoilname>
+    <inplanephaseencodingdirection>COL</inplanephaseencodingdirection>
+    <flipangle>90</flipangle>
+    <variableflipangleflag>N</variableflipangleflag>
+    <sar>0.0441879</sar>
+    <acquisitionnumber>1</acquisitionnumber>
+    <instancenumber>1</instancenumber>
+    <numtemporalpositions>155</numtemporalpositions>
+    <samplesperpixel>1</samplesperpixel>
+    <photometricinterpretation>MONOCHROME2</photometricinterpretation>
+    <rows>64</rows>
+    <columns>64</columns>
+    <bitsallocated>16</bitsallocated>
+    <bitsstored>16</bitsstored>
+    <highbit>15</highbit>
+    <magneticfield>3</magneticfield>
+    <fieldofview>220 220</fieldofview>
+    <tr>2500</tr>
+    <te>30</te>
+    <echospacing>476</echospacing>
+    <sensefactor>1</sensefactor>
+    <prescribedslicespacing>5</prescribedslicespacing>
+    <acquisitionmatrix>64 64</acquisitionmatrix>
+    <pixelbandwidth>7812.5</pixelbandwidth>
+    <bandwidth>500</bandwidth>
+    <frequencydirection>1</frequencydirection>
+    <disdaqs>5</disdaqs>
+  </acquisitiondata>
+  <subject>
+    <name>QA_Premier_48Ch</name>
+    <age>0</age>
+    <sex/>
+    <weight>50.35</weight>
+  </subject>
+  <history>
+    <entry>
+      <date>2022-06-13 11:16:25</date>
+      <description>
+Generated on cirxnat2 by 'dicom2bxh' (BXH utilities (1.11.14)) from 4185 input args: /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1-ylf8pg.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-10-ylf8on.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-100-1wbfpz6.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1000-ylz19b.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1001-ylz1av.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1002-ylz1ax.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1003-ylz1a5.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1004-ylz1a4.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1005-ylz1a2.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1006-ylz195.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1007-ylz1at.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1008-ylz196.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1009-ylz1as.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-101-1wbfpy8.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1010-ylz1a0.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1011-ylz18g.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1012-ylz1a3.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1013-ylz1aw.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1014-ylz1a6.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1015-ylz193.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1016-ylz192.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1017-ylz194.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1018-ylz19z.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1019-ylz198.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-102-1wbfpz2.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1020-ylz197.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1021-ylz19y.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1022-ylz1au.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1023-ylz19x.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1024-ylz1a1.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1025-ylz199.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1026-ylz19a.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1027-ylz1bn.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1028-ylz1ay.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1029-ylz1ci.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-103-1wbfpy5.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1030-ylz1df.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1031-ylz1cn.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1032-ylz1de.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1033-ylz1cq.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1034-ylz1bq.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1035-ylz1cl.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1036-ylz1bp.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1037-ylz1b1.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1038-ylz1bv.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1039-ylz1br.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-104-1wbfpy6.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1040-ylz1cp.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1041-ylz1bt.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1042-ylz1bu.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1043-ylz1bo.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1044-ylz1az.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1045-ylz1bw.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1046-ylz1dd.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1047-ylz1ck.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1048-ylz1cr.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1049-ylz1cj.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-105-1wbfpy7.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1050-ylz1cm.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1051-ylz1co.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1052-ylz1b0.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1053-ylz1bs.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1054-ylz1dh.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1055-ylz1ef.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1056-ylz1dm.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1057-58xiwh.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1058-58xiwk.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1059-58xiwl.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-106-1wbfpyc.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1060-58xiwp.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1061-58xiwq.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1062-ylz1ea.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1063-ylz1eg.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1064-ylz1eb.dcm /flywheel/v0/input/fmri_input/1.2.840.113619.6.475.184222038715861991128474349876199146963-2-1065-58xiwo.dcm [args truncated]</description>
+    </entry>
+    <entry>
+      <date>2022-06-13 11:16:27</date>
+      <description>
+Generated on cirxnat2 by '/opt/bxh_xcede_tools-1.11.14-lsb30.x86_64/bin/fmriqa_phantomqa' (BXH utilities (1.11.14)) from 1 input args: /flywheel/v0/input/fmri_input/fmri_input.bxh
+BXH utilities (1.11.14)</description>
+    </entry>
+  </history>
+</bxh>

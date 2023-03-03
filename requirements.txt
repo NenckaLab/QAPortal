@@ -1,0 +1,8 @@
+asgiref
+Django
+psycopg2-binary
+sqlparse
+matplotlib
+bs4
+beautifulsoup4
+python-decouple

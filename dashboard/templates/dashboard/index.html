@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <title>Phantom QA results for {{scanner}}_{{coil}} on {{scandate}}</title>
+    <style type="text/css"><!--
+      table.bordered tr td {border: 1px solid gray;}
+      body {font-family: sans-serif;}
+      .colorbar {background-color: #dddddd;}
+      .cbarmin {font-size: smaller; text-align: left;}
+      .cbarmax {font-size: smaller; text-align: right;}
+      .imgmin {font-size: smaller;}
+      .imgmax {font-size: smaller;}
+    --></style>
+  </head>
+  <body>
+    <h1>Phantom QA results for {{scanner}}_{{coil}} on {{scandate}}</h1>
+    <p><img src="{{file_path|safe}}qa_signal.png " /></p>
+    <p><img src="{{file_path}}qa_spectrum.png " /></p>
+    <p><img src="{{file_path}}qa_relstd.png " /></p>
+    <p><img src="{{file_path}}qa_fwhmx.png " /></p>
+    <p><img src="{{file_path}}qa_fwhmy.png " /></p>
+    <p><img src="{{file_path}}qa_fwhmz.png " /></p>
+    <p><img src="{{file_path}}qa_cmassx.png " /></p>
+    <p><img src="{{file_path}}qa_cmassy.png " /></p>
+    <p><img src="{{file_path}}qa_cmassz.png " /></p>
+    <p><img src="{{file_path}}qa_ghost.png " /></p>
+    <hr />
+    <p><font size="+2"><b>Odd-even difference image</b></font></p>
+    <table>
+     <tr class="colorbar">
+      <td class="cmin">{{cmin.0}}</td>
+      <td class="cmax">{{cmax.0}}</td>
+     </tr>
+     <tr class="colorbar">
+      <td colspan="2">
+       <img alt="Colorbar for Odd-even difference image" src="{{file_path}}fmri_input_nave_cbar.jpg " />
+      </td>
+     </tr>
+    </table>
+    <table>
+     <tr>
+      <td>
+       <span class="imgmin">{{imgmin.0}}</span>
+       <span class="imgmax">{{imgmax.0}}</span>
+      </td>
+     </tr>
+     <tr>
+      <td><img alt="Odd-even difference image" src="{{file_path}}fmri_input_nave.jpg " /></td>
+     </tr>
+    </table>
+    <hr />
+    <p><font size="+2"><b>Mean image</b></font></p>
+    <table>
+     <tr class="colorbar">
+      <td class="cmin">{{cmin.1}}</td>
+      <td class="cmax">{{cmax.1}}</td>
+     </tr>
+     <tr class="colorbar">
+      <td colspan="2">
+       <img alt="Colorbar for Mean image" src="{{file_path}}fmri_input_ave_cbar.jpg " />
+      </td>
+     </tr>
+    </table>
+    <table>
+     <tr>
+      <td>
+       <span class="imgmin">{{imgmin.1}}</span>
+       <span class="imgmax">{{imgmax.1}}</span>
+      </td>
+     </tr>
+     <tr>
+      <td><img alt="Mean image" src="{{file_path}}fmri_input_ave.jpg " /></td>
+     </tr>
+    </table>
+    <hr />
+    <p><font size="+2"><b>Standard Deviation image</b></font></p>
+    <table>
+     <tr class="colorbar">
+      <td class="cmin">{{cmin.2}}</td>
+      <td class="cmax">{{cmax.2}}</td>
+     </tr>
+     <tr class="colorbar">
+      <td colspan="2">
+       <img alt="Colorbar for Standard Deviation image" src="{{file_path}}fmri_input_sd_cbar.jpg " />
+      </td>
+     </tr>
+    </table>
+    <table>
+     <tr>
+      <td>
+       <span class="imgmin">{{imgmin.2}}</span>
+       <span class="imgmax">{{imgmax.2}}</span>
+      </td>
+     </tr>
+     <tr>
+      <td><img alt="Standard Deviation image" src="{{file_path}}fmri_input_sd.jpg" /></td>
+     </tr>
+    </table>
+    <hr />
+    <p><font size="+2"><b>SFNR image</b></font></p>
+    <table>
+     <tr class="colorbar">
+      <td class="cmin">{{cmin.3}}</td>
+      <td class="cmax">{{cmax.3}}</td>
+     </tr>
+     <tr class="colorbar">
+      <td colspan="2">
+       <img alt="Colorbar for SFNR image" src="{{file_path}}fmri_input_sfnr_cbar.jpg" />
+      </td>
+     </tr>
+    </table>
+    <table>
+     <tr>
+      <td>
+       <span class="imgmin">{{imgmin.3}}</span>
+       <span class="imgmax">{{imgmax.3}}</span>
+      </td>
+     </tr>
+     <tr>
+      <td><img alt="SFNR image" src="{{file_path}}fmri_input_sfnr.jpg" /></td>
+     </tr>
+    </table>
+    <hr />
+    <p><font size="+1"><b>Acquisition parameters</b></font></p>
+    <table border="1">
+        {% for key, value in params.items %}
+        <tr>
+        <td>{{key}}</td>
+        <td>{{value}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+</head>
+<body>
+    <h1>QA Search</h1>
+
+<form action="{% url 'plot' %}" method="get">
+    <select id="coil" name="coil">
+        <option value="RM:32NovaHeadPR~">RM:32NovaHeadPR~</option>
+        <option value="RM:32NovaHead2">RM:32NovaHead2</option>
+        <option value="21HN">21HN</option>
+        <option value="21HN+60PA">21HN+60PA</option>
+        <option value="48HP">48HP</option>
+        <option value="48HAP">48HAP</option>
+    </select>
+    <br><br><br>
+    <select id="stat" name="stat">
+        <option value="SNR">SNR</option>
+
+        <option value="SFNR">SFNR</option>
+
+        <option value="std">std</option>
+
+        <option value="percentFluc">percentFluc</option>
+
+        <option value="drift">drift</option>
+
+        <option value="driftfit">driftfit</option>
+
+        <option value="rdc">rdc</option>
+
+        <option value="CMassX">CMassX</option>
+
+        <option value="CMassY">CMassY</option>
+
+        <option value="CMassZ">CMassZ</option>
+
+        <option value="FWHMX">FWHMX</option>
+
+        <option value="FWHMY">FWHMY</option>
+
+        <option value="FWHMZ">FWHMZ</option>
+
+        <option value="MeanGhost">MeanGhost</option>
+
+        <option value="MeanBrightGhost">MeanBrightGhost</option>
+    </select>
+    <br><br><br>
+    <input type="text" name="daterange" id="daterange" value="" />
+    <script>
+        $(function() {
+          $('input[name="daterange"]').daterangepicker({
+            opens: 'left'
+          }, function(start, end, label) {
+            console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+          });
+        });
+    </script>
+    <br><br><br>
+    <input type="submit" id="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
